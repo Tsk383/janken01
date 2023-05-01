@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>おみくじ練習</title>
+</head>
+
+<body>
+  <script>
+    // 乱数が0~5まで出てくる
+    //5→大吉
+    //4→中吉
+    //3→小吉
+    //2→凶
+    //1,0→大凶
+    const min = 0;
+    const max = 5;
+    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+
+    alert(randomNumber);
+    if (randomNumber === 5) {
+      // 大吉
+      alert("大吉");
+    } else if (randomNumber === 4) {
+      // 中吉
+      alert("中吉");
+    } else if (randomNumber === 3) {
+      // 小吉
+      alert("小吉");
+    } else if (randomNumber === 2) {
+      // 凶
+      alert("凶");
+    } else {
+      // 大凶
+      alert("大凶");
+    }
+
+  </script>
+</body>
+
+</html>
